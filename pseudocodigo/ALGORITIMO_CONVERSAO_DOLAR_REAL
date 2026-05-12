@@ -1,0 +1,10 @@
+ALGORITIMO_CONVERSAO_DOLAR_REAL
+cotacaoDolar, valorDolar, valorReal : valorReal
+INICIO
+|ESCREVA('informe a cotação do Dolar')
+|LEIA(cotacaoDolar)
+|ESCREVA('Informe o valor em Dolares que deseja converter para real')
+|LEIA(valorDolar)
+| valorReal←cotacaoDolar*valorDolar
+|ESCREVA(valorReal)
+FIM
