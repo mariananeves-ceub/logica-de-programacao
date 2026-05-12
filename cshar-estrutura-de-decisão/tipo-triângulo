@@ -1,0 +1,34 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApiExEstruturaDecisão.Controllers
+{
+    public class ClassificacaoTriangulos : ControllerBase
+    {
+        [HttpPost("ExercicioClassificacaoTriangulos")]
+        public string ExercicioClassificacaoTriangulos(int ladoA, int ladoB, int ladoC)
+        {
+            string resultado;
+            if ((ladoA + ladoB <= ladoC)||
+            (ladoA + ladoC <= ladoB)||
+            (ladoC + ladoB <= ladoA))
+            {
+                resultado = $"NÃO FORMA UM TRIÂNGULO";
+            }
+            else if ((ladoA == ladoB) && (ladoA == ladoC))
+            {
+                resultado = $"É UM TRIÂNGULO EQUILÁTERO";
+            }
+            else if ((ladoA == ladoB)||
+                    (ladoA == ladoC)||
+                    (ladoB == ladoC))
+            {
+                resultado = $"É UM TRIÂNGULO ISÓCELES";
+            }
+            else
+            {
+                resultado = $"É UM TRIÂNGULO ESCALENO";
+            }
+            return resultado;
+        }
+    }
+}
