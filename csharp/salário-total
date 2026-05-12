@@ -1,0 +1,15 @@
+//Entrada
+double salarioFixo, valorTotalVendas, comissao, salarioTotal; 
+Console.WriteLine("Informe o valor total de vendas do vendedor"); 
+valorTotalVendas = Convert.ToDouble(Console.ReadLine()); 
+Console.WriteLine("Informe o salário fixo do vendedor"); 
+salarioFixo = Convert.ToDouble(Console.ReadLine()); 
+//Processamento 
+comissao = valorTotalVendas * 0.15; 
+salarioTotal = (comissao + salarioFixo); 
+//SAÍDA 
+Console.WriteLine($"A comissão do vendedor" + 
+                  $" cujo slário fixo é {salarioFixo}" + 
+                  $" e que vendeu R$ {valorTotalVendas}" + 
+                  $" será de R${comissao}, já o seu salário" + 
+                  $" total será de R$ {salarioTotal}.");
