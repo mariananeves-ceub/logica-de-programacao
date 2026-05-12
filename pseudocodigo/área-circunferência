@@ -1,0 +1,9 @@
+ALGORITIMO_AREA_CIRCUNFERENCIA 
+VAR raio, areaCircunferencia   : real 
+CONST PI=3.1416 
+INICIO 
+     |ESCREVA("INFORME O VALOR DO RAIO") 
+     |LEIA(raio) 
+     |   areaCircunferencia←PI*raio*raio  
+     |ESCREVA("A area da circunferência é "+ areaCircunferencia) 
+FIM  
