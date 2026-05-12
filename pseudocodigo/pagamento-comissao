@@ -1,0 +1,16 @@
+ALGORITIMO_PAGAMENTO_COMISSAO
+identificacaoVendedor, codigoPeca, precoUnitario, quantidadeVendida, valorTotal,
+valorComissao : real
+INICIO
+|ESCREVA("INFORME A IDENTIFICAÇÃO DO VENDEDOR")
+|LEIA("identificacaoVendedor")
+|ESCREVA("INFORME O CODIGO DA PECA")
+|LEIA("codigoPeca")
+|ESCREVA("INFORME O PRECO UNITARIO DA PECA")
+|LEIA("precoUnitario")
+|ESCREVA("INFORME A QUANTIDADE VENDIDA")
+|LEIA("quantidadeVendida")
+valorTotal←precoUnitario*quantidadeVendida
+valorComissao←totalVenda*0,05
+ESCREVA("O VALOR DA COMISSÃO DO VENDEDOR É R$+ valorComissao")
+FIM
