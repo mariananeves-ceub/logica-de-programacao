@@ -1,4 +1,3 @@
-# logica-de-programacao
 # Algoritmos e Lógica de Programação
 
 Repositório criado para armazenar exercícios desenvolvidos durante meus estudos de lógica de programação na faculdade.
