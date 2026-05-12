@@ -1,0 +1,39 @@
+  using Microsoft.AspNetCore.Mvc;
+
+namespace WebApiExEstruturaDecisão.Controllers
+{
+    public class ClassificacaoIdadeNadadorController : Controller
+    {
+        [HttpPost("ExercicioClassificacaoIdadeNadador")]
+        public string ExercicioClassificacaoIdadeNadador(int idade)
+        {
+            string categoria;
+            if ((idade >= 5) && (idade <= 7))
+            {
+                categoria = $"A CATEGORIA É INFANTIL A";
+            }
+            else if ((idade >= 0) && (idade <= 4))
+            {
+                categoria = $"SEM CATEGORIA";
+            }
+            else if ((idade >= 8) && (idade <= 11))
+            {
+                categoria = $"A CATEGORIA É INFANTIL B";
+            }
+            else if ((idade >= 12) && (idade <= 13))
+            {
+                categoria = "A CATEGORIA É JUVENIL A";
+            }
+            else if ((idade >= 14) && (idade <= 17))
+            {
+                categoria = $"A CATEGORIA É JUVENIL B";
+            }
+            else
+            {
+                categoria = $"A CATEGORIA É ADULTOS";
+            }
+            return categoria;
+
+        }
+    }
+}
