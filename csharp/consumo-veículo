@@ -1,0 +1,17 @@
+//ENTRADA 
+double distanciaTotalKm, totalCombustivelLitros, consumoMedio, custoKm, 
+precoLitroCombustivel, valorTotalCombustivel; 
+Console.WriteLine("Informe a distância percorrida pelo veículo"); 
+distanciaTotalKm = Convert.ToDouble(Console.ReadLine()); 
+Console.WriteLine("Informe o total de combustível gasto pelo veículo"); 
+totalCombustivelLitros = Convert.ToDouble(Console.ReadLine()); 
+Console.WriteLine("Informe o valor total e reais do combustível gasto pelo veículo"); 
+valorTotalCombustivel = Convert.ToDouble(Console.ReadLine()); 
+//PROCESSAMENTO 
+consumoMedio = (distanciaTotalKm / totalCombustivelLitros); 
+custoKm = (distanciaTotalKm / valorTotalCombustivel); 
+precoLitroCombustivel = (valorTotalCombustivel / totalCombustivelLitros); 
+//SAÍDA  
+Console.WriteLine("Consumo médio em Km/l é de " + consumoMedio); 
+Console.WriteLine("Custo por KM do veículo é de R$" + custoKm); 
+Console.WriteLine("O preço por litro gasto pelo veículo é " + precoLitroCombustivel);
