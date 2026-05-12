@@ -1,0 +1,47 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApiExEstruturaDecisão.Controllers
+{
+    public class MaiorTresNúmerosController : Controller
+    {
+        [HttpPost("ExercicioMaiorTresNumeros")]
+        public string ExercicioMaiorTresNumeros(int numero1Usuario, int numero2Usuario, int numero3Usuario)
+        {
+            int numero1, numero2, numero3;
+            string resultado;
+            numero1 = numero1Usuario;
+            numero2 = numero2Usuario;
+            numero3 = numero3Usuario;
+            if ((numero1 == numero2) && (numero1 == numero3))
+            {
+                resultado = $"Os números são iguais";
+            }
+            else if ((numero1 == numero3) && (numero1 > numero2))
+            {
+                resultado = $"Os números 1 ({numero1}) e 3 ({numero3}) são iguais e os maiores";
+            }
+            else if ((numero1 == numero2) && (numero1 > numero3))
+            {
+                resultado = $"Os números 1 ({numero1}) e 2 ({numero2}) são iguais e os maiores";
+            }
+             else if ((numero2 == numero3) && (numero2 > numero1))
+            {
+            resultado = $"Os números 2 ({numero2}) e 3 ({numero3}) são iguais e os maiores";
+            }
+            else if ((numero1 > numero2) && (numero1 > numero3))
+            {
+                resultado = $"O maior número é o número 1 ({numero1})";
+            }
+            else if ((numero2 > numero1) && (numero2 > numero3))
+            {
+                resultado = $"O maior número é o número 2 ({numero2})";
+            }
+            else
+            {
+                resultado = $"O maior número é o número 3 ({numero3})";
+            }
+            return resultado;
+
+        }
+    }
+}
