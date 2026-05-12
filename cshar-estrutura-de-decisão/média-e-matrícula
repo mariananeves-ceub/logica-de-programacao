@@ -1,0 +1,33 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApiExEstruturaDecisão.Controllers
+{
+    public class MediaAlunosController : Controller
+    {
+        [HttpGet("MediaAluno")]
+        public string MediaAluno (double nota1Aluno, 
+                                  double nota2Aluno, 
+                                  string matriculaAluno)
+        {
+            string matricula, mediaMensagem;
+            double nota1, nota2, mediaNota;
+            matricula = matriculaAluno;
+            nota1 = nota1Aluno;
+            nota2 = nota2Aluno;
+            mediaNota = (nota1 + nota2) / 2;
+            if (mediaNota > 7)
+            {
+                mediaMensagem = $"Aluno Aprovado";
+            }
+            else if (mediaNota == 7)
+            {
+                mediaMensagem = $"Aluno em Recuperação";
+            }
+            else
+            {
+                mediaMensagem = $"Aluno Reprovado";
+            }
+            return ("Resultado: " + mediaMensagem + " - Matrícula: " + matricula);
+        }
+    }
+}
