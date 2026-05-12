@@ -1,0 +1,6 @@
+double raio, areaCircunferencia; 
+Console.WriteLine("Informe o valor do raio para saber a área da circunferência"); 
+raio = Convert.ToDouble(Console.ReadLine()); 
+//areaCircunferencia = 3.1416 * raio * raio 
+areaCircunferencia = Math.PI * Math.Pow(raio, 2); 
+Console.WriteLine("A área da circunferência é " + areaCircunferencia); 
