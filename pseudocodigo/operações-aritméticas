@@ -1,0 +1,16 @@
+ALGORITIMO_NUMEROS_INTEIROS_SOMA_SUBTRACAO_MULTIPLICACAO_DIVISAO 
+VAR numero1, numero2, subtracao, adicao, multiplicacao, divisao 
+INICIO 
+      |ESCREVA("Informe o primeiro numero") 
+      |LEIA(numero1) 
+      |ESCREVA("Informe o segundo numero") 
+      |LEIA(numero2) 
+      |   soma←(numero1+numero2) 
+      |   subtracao←(numero1-numero2) 
+      |   multiplicacao←(numero1*numero2) 
+      |   divisao←(numero1/numero2) 
+      |ESCREVA("O resultado da operacao de adicao é " + soma) 
+      |ESCREVA("O resultado da operacao de subtracao é " + subtracao) 
+      |ESCREVA("O resultado da operacao de multiplicacao é " + multiplicacao) 
+      |ESCREVA("O resultado da operacao de divisao é " + divisao)
+FIM
