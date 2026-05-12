@@ -1,0 +1,19 @@
+ALGORITIMO_SOMA_QUADRADOS
+numero1, numero2, numero3, numero4, quadradoNumero1, quadradoNumero2, quadradoNumero3,
+quadradoNumero4, somaQuadrados : real
+INICIO
+|ESCREVA("INFORME O PRIMEIRO NUMERO")
+|LEIA("numero1")
+|ESCREVA("INFORME O SEGUNDO NUMERO")
+|LEIA("numero2")
+|ESCREVA("INFORME O TERCEIRO NUMERO")
+|LEIA("numero3")
+|ESCREVA("INFORME O QUARTO NUMERO")
+|LEIA("numero4")
+| quadradoNumero1←numero1*numero1
+| quadradoNumero2←numero2*numero2
+| quadradoNumero3←numero3*numero3
+| quadradoNumero4←numero4*numero4
+| somaQuadrados←(quadradoNumero1+quadradoNumero2+quadradoNumero3+quadradoNumero4)
+ESCREVA(somaQuadrados)
+FIM
