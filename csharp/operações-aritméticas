@@ -1,0 +1,13 @@
+double numero1, numero2, subtracao, soma, multiplicacao, divisao;
+Console.WriteLine("Informe o primeiro numero");
+numero1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o segundo numero");
+numero2 = Convert.ToDouble(Console.ReadLine());
+soma = (numero1 + numero2);
+subtracao = (numero1 - numero2);
+multiplicacao = (numero1 * numero2);
+divisao = (numero1 / numero2);
+Console.WriteLine($"O resultado da operacao de adicao é " + soma);
+Console.WriteLine($"O resultado da operacao de subtracao é " + subtracao);
+Console.WriteLine($"O resultado da operacao de multiplicacao é " + multiplicacao);
+Console.WriteLine($"O resultado da operacao de divisao é " + divisao);
