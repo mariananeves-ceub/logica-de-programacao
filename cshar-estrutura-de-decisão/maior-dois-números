@@ -1,0 +1,30 @@
+  using Microsoft.AspNetCore.Mvc;
+
+namespace WebApiExEstruturaDecisão.Controllers
+{
+    public class Maior2NúmerosController : Controller
+    {
+        [HttpPost("ExercicioMaiorDoisNumeros")]
+        public string ExercicioMaiorDoisNumeros(int numero1Usuario, int numero2Usuario)
+        {
+            int numero1, numero2;
+            string resultado;
+            numero1 = numero1Usuario;
+            numero2 = numero2Usuario;
+            if (numero1 == numero2)
+            {
+                resultado = "Os números são iguais";
+            }
+            else if (numero1 > numero2)
+            {
+                resultado = $"O maior número é o número 1 ({numero1})";
+            }
+            else
+            {
+                resultado = $"O maior número é o número 2 ({numero2})";
+            }
+            return resultado;
+
+        }
+    }
+}
